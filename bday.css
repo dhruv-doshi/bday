@@ -1,0 +1,192 @@
+*{
+  font-size: 18px;
+  font-family: 'Bangers', cursive;
+}
+
+body {
+  background-color: rgba(245, 152, 242,0.14);
+}
+
+.hbd-carousel {
+  width: 100vw;
+  align-items: center;
+  padding: 15vw;
+}
+
+.navbar-light{
+background-color: #5BD0FF;
+}
+
+.h1{
+  font-size: 60px;
+  height: 70px;
+}
+
+#m{
+  font-size: 45px;
+  font-weight: bold ;
+
+}
+
+
+#a, #b, #c{
+  box-sizing: border-box;
+  border:2px solid black;
+  margin-bottom: 40px;
+}
+
+
+.chic, .bee, .sus {
+  font-weight: bold;
+}
+
+h3{
+    text-align: center;
+}
+
+.hbd-banner {
+  width: 100vw;
+  height: 100vh;
+
+}
+
+@media (min-width:576px) {
+button {
+    display: none;
+    }
+.h1{
+  font-size: 30px
+  height: 40px
+}
+}
+
+/*card*/
+.container > div{
+  width: 24vw;
+  height: 24vw;
+  margin: 1vw;
+  padding: 0;
+  background-color: whitesmoke;
+  border-radius: 2%;
+  overflow: hidden;
+  align-items: center;
+}
+
+
+/*relative as span becomes absolute about club*/
+.galImg {
+  position: relative;
+}
+
+.galImg .span{
+  position: absolute;
+  top: -4vw;
+  left: 0vw;
+  color: black;
+  width: 24vw;
+  height: 2.5vw;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 2.5vw;
+  transition: all 0.3s ease-in-out ;
+}
+
+.galImg:hover .span{
+  top: -1vw;
+  opacity: 0.9;
+
+}
+
+.galImg .span2{
+  position: absolute;
+  top: 17vw;
+  left: 0vw;
+  color: black;
+  width: 24vw;
+  height: 2vw;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 8;
+  transition: all 0.3s ease-in-out ;
+}
+
+.galImg:hover .span2{
+  top: 10vw;
+  opacity: 0.9;
+
+}
+
+.galImg:hover  .image{
+  transform: scale(0.8);
+  opacity: 0.7;
+}
+
+.image{
+  max-width: 24vw;
+  max-height: 24vw;
+  transition: all 0.5s ease-out ;
+}
+
+/*for mobile phones*/
+@media only screen and (max-width: 500px) {
+
+  label {
+      display: block;
+      cursor: pointer;
+  }
+.menu {
+      text-align: center;
+      width: 100%;
+      display: none;
+  }
+.menu a {
+      display: block;
+  }
+#toggle:checked + .menu {
+      display: block;
+  }
+
+
+
+
+
+ 
+  .container > div{
+      width: 40vw;
+      height: 40vw;
+      margin: 4vw;
+  }
+
+  .galImg .span{
+      top: -10.66vw;
+      left: 0vw;
+      width: 40vw;
+      height: 4vw;
+  }
+  
+  .galImg:hover .span{
+      top: -1vw;
+      opacity: 0.9;
+  
+  }
+  
+  .galImg .span2{
+      top: 42vw;
+      left: 0vw;
+      width: 40vw;
+      height: 4vw;
+  }
+  
+  .galImg:hover .span2{
+      top: 30vw;
+      opacity: 0.9;
+  
+  }
+
+  .image{
+      max-width: 40vw;
+      max-height: 40vw;
+      transition: all 0.5s ease-out ;
+  }
+
+  }
